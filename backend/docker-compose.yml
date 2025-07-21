@@ -1,0 +1,10 @@
+services:
+  yolo-api:
+    build: .
+    container_name: yolo-api
+    ports:
+      - "8099:8000"
+    environment:
+      - GITLAB_TOKEN=${GITLAB_TOKEN}
+      - MODEL_URL=${MODEL_URL}
+    restart: unless-stopped

@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Environment
+.env
+.venv/
+env/
+venv/
+.idea/
+.vscode/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Models
+models/best.pt
+models/*.pt
+
+# Docker
+*.pid
+*.tar
+*.bak
+docker-compose.override.yml
+
+# pytest
+.cache/
+.pytest_cache/
+htmlcov/
+
+# mypy, coverage, ruff, etc.
+.mypy_cache/
+.coverage
+coverage.xml
+*.cover
+*.pyc
+*.pyo
+*.pyd
+
+# GitLab CI logs
+*.log
+*.out
+
+# OS files
+.DS_Store
+Thumbs.db

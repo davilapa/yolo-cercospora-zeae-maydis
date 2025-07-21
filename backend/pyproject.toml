@@ -1,0 +1,19 @@
+[project]
+name = "cercospora-zeae-maydis-detection"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.115.12",
+    "httpx>=0.28.1",
+    "pillow>=11.2.1",
+    "pydantic-settings>=2.9.1",
+    "python-multipart>=0.0.20",
+    "requests>=2.32.3",
+    "ultralytics>=8.3.146",
+]
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv.build"
