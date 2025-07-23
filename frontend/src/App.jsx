@@ -11,14 +11,6 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [useHealthyMock, setUseHealthyMock] = useState(false);
   const [result, setResult] = useState(null);
-
-  const toggleMockType = () => {
-    setUseHealthyMock(!useHealthyMock);
-    setResult(null);
-    if (selectedImage) {
-      resetImage();
-    }
-  };
   
   const {
     selectedImage,
@@ -32,6 +24,14 @@ export default function App() {
     triggerFileInput,
     resetImage
   } = useImageUpload();
+
+  const toggleMockType = () => {
+    setUseHealthyMock(!useHealthyMock);
+    setResult(null);
+    if (selectedImage) {
+      resetImage();
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
